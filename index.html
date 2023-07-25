@@ -7,6 +7,8 @@
     <title>Студія</title>
 
     <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,46 +16,38 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <nav>
-        <a class="logo internal-link" href="./index.html"
-          ><span class="logo-head">Web</span>Studio</a
-        >
-        <ul>
+        <a class="logo link" href="./index.html">
+          Web<span class="logo-tail">Studio</span>
+        </a>
+        <ul class="list">
           <li>
-            <a
-              class="nav-menu text-body-medium internal-link"
-              href="./index.html"
+            <a class="nav-menu text-body-medium link" href="./index.html"
               >Studio</a
             >
           </li>
           <li>
-            <a
-              class="nav-menu text-body-medium internal-link"
-              href="./portfolio.html"
+            <a class="nav-menu text-body-medium link" href="./portfolio.html"
               >Portfolio</a
             >
           </li>
           <li>
-            <a class="nav-menu text-body-medium internal-link" href=""
-              >Contacts</a
-            >
+            <a class="nav-menu text-body-medium link" href="">Contacts</a>
           </li>
         </ul>
       </nav>
-      <address>
-        <ul>
+      <address class="address">
+        <ul class="list">
           <li>
             <a
-              class="nav-address text-body internal-link"
+              class="nav-address text-body link"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a
-              class="nav-address text-body internal-link"
-              href="tel:+110001111111"
+            <a class="nav-address text-body link" href="tel:+110001111111"
               >+11 (000) 111-11-11</a
             >
           </li>
@@ -63,7 +57,7 @@
 
     <main>
       <section class="hero-screen">
-        <h1>Effective Solutions for Your Business</h1>
+        <h1 class="header-one">Effective Solutions for Your Business</h1>
         <button class="btn cta-btn text-button-text" type="button">
           Order Service
         </button>
@@ -71,7 +65,7 @@
 
       <section>
         <h2 hidden>Our features</h2>
-        <ul>
+        <ul class="list">
           <li>
             <h3>Strategy</h3>
             <p class="text-body">
@@ -104,8 +98,8 @@
       </section>
 
       <section>
-        <h2>What are we doing</h2>
-        <ul>
+        <h2 class="header-two">What are we doing</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/description_img_monitor.jpg"
@@ -132,7 +126,7 @@
 
       <section>
         <h2>Our Team</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/team_photo_mark_guerrero.jpg"
@@ -173,10 +167,10 @@
       </section>
     </main>
 
-    <footer>
-      <a class="logo internal-link" href="./index.html"
-        ><span class="logo-head">Web</span>Studio</a
-      >
+    <footer class="footer">
+      <a class="logo link" href="./index.html">
+        Web<span class="logo-tail">Studio</span>
+      </a>
       <p class="text-body">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
