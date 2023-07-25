@@ -94,6 +94,10 @@ body {
     text-decoration: none;
 }
 
+.link p {
+    color: var(--color-text);
+}
+
 .list {
     list-style: none;
 }
@@ -202,7 +206,5 @@ body {
 }
 
 .team-member {
-    background-color: var(--color-white-background);
-    text-align: center;
-    text-transform: capitalize;
+    background-color: var(--color-white-background);    
 }
