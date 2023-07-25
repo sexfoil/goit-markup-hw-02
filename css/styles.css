@@ -1,74 +1,138 @@
 :root {
-    --color-iris: #4D5AE5;
-    --color-ocean: #404BBF;
-    --color-navy-blue: #2E2F42;
-    --color-green: #31D0AA;
-    --color-slate: #434455;
-    --color-light-slate: #8E8F99;
-    --color-cornflower: #E7E9FC;
-    --color-cloud: #F4F4FD;
-    --color-white: #FFFFFF;
-    --color-dairy: #FCFCFC;
+    --color-primary-brand: #4D5AE5;
+    --color-pressed-state: #404BBF;
+    --color-dark: #2E2F42;
+    --color-success: #31D0AA;
+    --color-text: #434455;
+    --color-subtle-text: #8E8F99;
+    --color-accent: #E7E9FC;
+    --color-light: #F4F4FD;
+    --color-modal-overlay: #2E2F4240
+    --color-hero-background: #2E2F4270;
+    --color-white-background: #FFFFFF;
+    --color-modal-background: #FCFCFC;
 
     --font-primary: "Roboto", sans-serif;
     --font-logo: "Raleway", sans-serif;
 
-    --font-size-header3: 20px;
-    --font-size-body: 16px;
-    --font-size-button-text: 16px;
-    --font-size-small-text: 12px;
-    --font-size-link-text: 12px;
-    --font-size-logo-text: 18px;
+    --font-weight-primary-regular: 400;
+    --font-weight-primary-medium: 500;
+    --font-weight-primary-bold: 700;
+    --font-weight-primary-black: 900;
 
-    --font-line-heght-header3: 1.2;
-    --font-line-heght-body: 1.5;
-    --font-line-heght-button-text: 1.5;
-    --font-line-heght-small-text: 1.167;
-    --font-line-heght-link-text: 1.333;
-    --font-line-heght-logo-text: 1.167;
+    --font-weight-logo-extrabold: 800;
+
+    --letter-spacing-main: .02em;
+    --letter-spacing-small: .04em;
 }
 
 body {
-    color: var(--color-navy-blue);
+    color: var(--color-dark);
     font-family: var(--font-primary);
-    font-weight: 400;
 }
 
 li {
     list-style-type: none;
 }
 
-.links {
+.internal-link {
     text-decoration: none;
 }
 
+h1 {
+    font-weight: var(--font-weight-primary-bold);
+    font-size: 56px;
+    letter-spacing: var(--letter-spacing-main);
+    line-height: 1.071;
+}
+
+h2 {
+    font-weight: var(--font-weight-primary-bold);
+    font-size: 36px;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+h3 {
+    font-weight: var(--font-weight-primary-medium);
+    font-size: 20px;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.text-body {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.text-small-text {
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.text-body-medium {
+    font-weight: var(--font-weight-primary-medium);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.text-button-text {
+    font-weight: var(--font-weight-primary-medium);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.text-link-text {
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: var(--letter-spacing-small);
+    text-decoration: underline;
+}
+
+/* LOGO styles */
 .logo {
-    color: var(--color-navy-blue);
+    color: inherit;
     font-family: var(--font-logo);
-    font-size: var(--font-size-logo-text);
-    line-height: var(--font-line-heght-logo-text);
-    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.167;
+    font-weight: var(--font-weight-logo-extrabold);
     letter-spacing: .03em;
     text-transform: uppercase;
 }
 
 .logo-head {
-    color: var(--color-iris);
+    color: var(--color-primary-brand);
+}
+
+/* HEADER styles */
+header {
+    color: var(--color-dark);
 }
 
 .nav-menu {
-    color: var(--color-navy-blue);
-    font-family: var(--font-primary);
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: .02em;
+    color: var(--color-dark);
+}
+
+.nav-menu:hover,
+.nav-menu:focus {
+    color: var(--color-pressed-state);
 }
 
 .nav-address {
-    color: var(--color-slate);
-    font-family: var(--font-primary);
+    color: var(--color-text);
     font-style: normal;
-    font-size: var(--font-size-body);
-    font-weight: 400;
-    letter-spacing: .02em;
+}
+
+.nav-address:hover,
+.nav-address:focus {
+    color: var(--color-pressed-state);
+    font-style: normal;
+}
+
+/* FOOTER styles */
+footer {
+    color: var(--color-light);
+    background-color: var(--color-dark);
 }
