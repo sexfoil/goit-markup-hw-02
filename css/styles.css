@@ -36,24 +36,25 @@ body {
 .header-one {
     font-weight: var(--font-weight-primary-bold);
     font-size: 56px;
-    letter-spacing: var(--letter-spacing-main);
     line-height: 1.07;
+    letter-spacing: var(--letter-spacing-main);
     text-align: center;
 }
 
 .header-two {
+    color: var(--color-dark);
     font-weight: var(--font-weight-primary-bold);
     font-size: 36px;
-    letter-spacing: var(--letter-spacing-main);
     line-height: 1.11;
-    text-align: center;
+    letter-spacing: var(--letter-spacing-main);
 }
 
 .header-three {
+    color: var(--color-dark);
     font-weight: var(--font-weight-primary-medium);
     font-size: 20px;
-    letter-spacing: var(--letter-spacing-main);
     line-height: 1.2;
+    letter-spacing: var(--letter-spacing-main);
 }
 
 .text-body {
@@ -97,6 +98,10 @@ body {
     list-style: none;
 }
 
+.text-header {
+    text-transform: capitalize;
+    text-align: center;
+}
 
 /* LOGO styles */
 .logo {
@@ -189,4 +194,15 @@ body {
 .hero-screen {
     color: var(--color-white-background);
     background-color: var(--color-dark);
+}
+
+/* TEAM-SCREEN style */
+.team-screen {
+    background-color: var(--color-light);
+}
+
+.team-member {
+    background-color: var(--color-white-background);
+    text-align: center;
+    text-transform: capitalize;
 }
